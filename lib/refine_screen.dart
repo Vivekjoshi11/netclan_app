@@ -10,13 +10,13 @@ class RefineScreen extends StatefulWidget {
 }
 
 class _RefineScreenState extends State<RefineScreen> {
-   moveToexplore(context) {
-    Navigator.push(
-      context, // BuildContext of the current page
-      MaterialPageRoute(
-          builder: (context) =>
-              const ExplorState()), // Route to the new page (SecondPage in this case)
-    );
+  moveToexplore(context) {
+    //  Navigator.push(
+    //   context, // BuildContext of the current page
+    //   MaterialPageRoute(
+    //       builder: (context) =>
+    //           const ExplorState()), // Route to the new page (SecondPage in this case)
+    // );
   }
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,13 @@ class _RefineScreenState extends State<RefineScreen> {
               width: double.infinity,
             ),
             ElevatedButton(
-                onPressed: moveToexplore(context),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ExplorState()),
+                  );
+                },
                 style: ButtonStyle(
                     fixedSize:
                         MaterialStateProperty.all(const Size(200.0, 50.0)),
@@ -49,7 +55,13 @@ class _RefineScreenState extends State<RefineScreen> {
               width: double.infinity,
             ),
             ElevatedButton(
-                onPressed: moveToexplore(context),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ExplorState()),
+                  );
+                },
                 style: ButtonStyle(
                     fixedSize:
                         MaterialStateProperty.all(const Size(200.0, 50.0)),
@@ -64,7 +76,13 @@ class _RefineScreenState extends State<RefineScreen> {
               width: double.infinity,
             ),
             ElevatedButton(
-                onPressed: moveToexplore(context),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ExplorState()),
+                  );
+                },
                 style: ButtonStyle(
                     fixedSize:
                         MaterialStateProperty.all(const Size(200.0, 50.0)),
