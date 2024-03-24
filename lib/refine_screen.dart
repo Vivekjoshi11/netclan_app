@@ -18,6 +18,7 @@ class _RefineScreenState extends State<RefineScreen> {
     //           const ExplorState()), // Route to the new page (SecondPage in this case)
     // );
   }
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,6 +57,8 @@ class _RefineScreenState extends State<RefineScreen> {
             ),
             ElevatedButton(
                 onPressed: () {
+                 const Text('onpressed pressed');
+                 print('hi');
                   Navigator.push(
                     context,
                     MaterialPageRoute(
